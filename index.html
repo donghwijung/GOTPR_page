@@ -8,20 +8,20 @@
   <meta property="og:title" content="GOTLoc: General Outdoor Text-based Coarse Localization Using Scene Graph Retrieval with OpenStreetMap"/>
   <meta property="og:description" content="GOTLoc: General Outdoor Text-based Coarse Localization Using Scene Graph Retrieval with OpenStreetMap"/>
   <meta property="og:url" content="https://donghwijung.github.io/GOTLoc/"/>
-  <!-- <meta property="og:image" content="static/images/concept.png" />
-  <meta property="og:image:width" content="3497"/>
-  <meta property="og:image:height" content="1929"/> -->
+  <meta property="og:image" content="static/images/concept.jpg" />
+  <meta property="og:image:width" content="3852"/>
+  <meta property="og:image:height" content="981"/>
 
   <meta name="twitter:title" content="GOTLoc: General Outdoor Text-based Coarse Localization Using Scene Graph Retrieval with OpenStreetMap">
   <meta name="twitter:description" content="Project page for GOTLoc: General Outdoor Text-based Coarse Localization Using Scene Graph Retrieval with OpenStreetMap">
-  <!-- <meta name="twitter:image" content="static/images/concept.png"> -->
-  <!-- <meta name="twitter:card" content="summary_large_image"> -->
+  <meta name="twitter:image" content="static/images/concept.jpg">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="keywords" content="text-based coarse localization, scene graph, OpenStreetMap">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
   <title>GOTLoc: General Outdoor Text-based Coarse Localization Using Scene Graph Retrieval with OpenStreetMap</title>
-  <link rel="icon" type="image/x-icon" href="static/images/r2d2.png">
+  <link rel="icon" type="image/x-icon" href="static/images/magnifying_map.png">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -114,6 +114,23 @@
 </section>
 <!-- End paper abstract -->
 
+<!-- Proposed Method Video -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video id="tree" autoplay loop muted playsinline width="100%">
+        <source src="./static/videos/gotloc_video.mp4" type="video/mp4">
+      </video>
+      <div class="level-set has-text-justified">
+        <p>
+          Voice narration is also provided. If you would like to watch the video with audio, please make sure to unmute it before viewing 😊
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
 <section class="section hero is-small">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
@@ -125,7 +142,7 @@
           </center>
           <div class="level-set has-text-justified">
             <p>
-              Concept of GOTLoc. The user describes the surrounding environment in text and provides it to the delivery robot. The robot interprets the text description to determine the user's \textcolor{blue}{scene}. In this process, both the text description and the OSM data are converted into scene graphs. The robot then retrieves and identifies the most similar pair, estimating the current scene based on the highest similarity.
+              Concept of GOTLoc. The user describes the surrounding environment in text and provides it to the delivery robot. The robot interprets the text description to determine the user's scene. In this process, both the text description and the OSM data are converted into scene graphs. The robot then retrieves and identifies the most similar pair, estimating the current scene based on the highest similarity.
             </p>
           </div>
         </div>
@@ -242,6 +259,19 @@
               </p>
             </div>
           </div>
+
+          <div class="content">
+            <h2 class="title is-4">City-scale data generation (GPS sampling)</h2>
+            <center>
+              <img src="static/images/gps_sampling_toronto.png" class="center-image blend-img-background"/>
+            </center>
+            <div class="level-set has-text-justified">
+              <p>
+                Toronto with sampled gps (<span style="color:blue">⬤</span>: Included GPS, <span style="color:red"></span>⬤</span>: Excluded GPS)
+              </p>
+            </div>
+          </div>
+
           <div class="content">
             <h2 class="title is-4">Quantitative evaluation with baselines and ablation study</h2>
             <center>
@@ -280,19 +310,38 @@
   </div>
 </section>
 
-<!-- Proposed Method Video -->
-<!-- <section class="hero teaser">
+<!-- Prompt session -->
+<!-- <section class="section">
   <div class="container is-max-desktop">
-    <div class="hero-body">
-      <br>
-      <h2 class="title is-3 has-text-centered">Proposed Method</h2>
-      <video id="tree" autoplay loop muted playsinline width="100%">
-        <source src="./static/videos/carousel1.mp4" type="video/mp4">
-      </video>
+  <div class="row">
+    <h2 class="title is-3">
+      Prompts
+    </h2>
+    <p class="content has-text-justified">
+        <a href="static/prompts/system_prompt.txt">System Prompt</a> |
+        <a href="static/prompts/gs_prompt.txt">Goal Selector Prompt</a> |
+        <a href="static/prompts/ed_prompt.txt">Event Descriptor Prompt</a> |
+        <a href="static/prompts/ee_prompt.txt">Emotion Evaluator Prompt</a>
+  </div>
+  </div>
+</section> -->
+
+<!-- Youtube video -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Video Presentation</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="publication-video">
+            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section> -->
-<!-- End teaser video -->
+<!-- End youtube video -->
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
@@ -309,6 +358,12 @@
     </div>
 </section>
 <!--End BibTex citation -->
+
+<!-- <section class="section" id="Acknowledgements">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Acknowledgements</h2>
+  This research was funded by the Korean Ministry of Land, Infrastructure and Transport (MOLIT) through the Smart City Innovative Talent Education Program and by the Korea Institute for Advancement of Technology (KIAT) under a MOTIE grant (P0020536). Additional support came from the Ministry of Education (MOE) and the National Research Foundation of Korea (NRF). K. Kim, D. Jung, and the corresponding author are affiliated with the Smart City Global Convergence program. Research facilities were provided by the Institute of Engineering Research at Seoul National University.  </div>
+</section> -->
 
 <!-- Statcounter tracking code -->
   
