@@ -21,7 +21,7 @@
 
 
   <title>GOTLoc: General Outdoor Text-based Coarse Localization Using Scene Graph Retrieval with OpenStreetMap</title>
-  <link rel="icon" type="image/x-icon" href="static/images/r2d2.ico">
+  <link rel="icon" type="image/x-icon" href="static/images/r2d2.png">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -98,7 +98,7 @@
 
 
 <!-- Paper abstract -->
-<section class="section hero">
+<section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -114,8 +114,122 @@
 </section>
 <!-- End paper abstract -->
 
+<section class="section hero is-small is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
+          <h2 class="title is-3">Concept of GOTLoc</h2>
+          <center>
+            <img src="static/images/concept.jpg" class="center-image blend-img-background"/>
+          </center>
+          <div class="level-set has-text-justified">
+            <p>
+              The user describes the surrounding environment in text and provides it to the delivery robot. The robot interprets the text description to determine the user's \textcolor{blue}{scene}. In this process, both the text description and the OSM data are converted into scene graphs. The robot then retrieves and identifies the most similar pair, estimating the current scene based on the highest similarity.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero is-small is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
+          <h2 class="title is-3">Process of GOTLoc</h2>
+          <center>
+            <img src="static/images/process.jpg" class="center-image blend-img-background"/>
+          </center>
+          <div class="level-set has-text-justified">
+            <p>
+              The method consists of three sequential steps: 1) Scene graph generation, 2) Scene graph candidates extraction, 3) Scene graph retrieval and scene selection. The input data are a query text description and OSM. The output is the matching scene id.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero is-small is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <h2 class="title is-3">Scene graph generation</h2>
+        <div class="content">
+          <h2 class="title is-4">OSM scene graph generation</h2>
+          <center>
+            <img src="static/images/osm_map_scene_graph_generation_process.jpg" class="center-image blend-img-background"/>
+          </center>
+          <div class="level-set has-text-justified">
+            <!-- <p>
+            </p> -->
+          </div>
+        </div>
+
+        <div class="content">
+          <h2 class="title is-4">Text scene graph generation</h2>
+          <center>
+            <img src="static/images/text_scene_graph_generation_process.jpg" class="center-image blend-img-background"/>
+          </center>
+          <div class="level-set has-text-justified">
+            <!-- <p>
+            </p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero is-small is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
+          <h2 class="title is-3">Scene graph retrieval network</h2>
+          <center>
+            <img src="static/images/scene_retrieval_network.jpg" class="center-image blend-img-background"/>
+          </center>
+          <div class="level-set has-text-justified">
+            <p>
+              Network of scene graph retrieval. Input of the process are query text scene graph and the extracted OSM scene graph candidates. And the output is the selected top-k scene id. The joint embedding model consists of multiple GPS convolution layers with self and cross modules.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero is-small is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
+          <h2 class="title is-3">Experiments</h2>
+          <div class="content">
+            <h2 class="title is-4">Experimental example</h2>
+            <center>
+              <img src="static/images/experimental_example.jpg" class="center-image blend-img-background"/>
+            </center>
+            <div class="level-set has-text-justified">
+              <p>
+                Examples of the experimental data are provided. The data were generated based on GPS coordinates 48.964117, 8.472481. (a) and (b) are presented to facilitate comparison and understanding rather than actual data used in GOTLoc. In addition, The segmentations in (b) and (c) are included solely for visualization purposes to aid understanding. Moreover, the gray area in (f) represents the overlapping region with (e).
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- Proposed Method Video -->
-<section class="hero teaser">
+<!-- <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <br>
@@ -125,7 +239,7 @@
       </video>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End teaser video -->
 
 <!--BibTex citation -->
