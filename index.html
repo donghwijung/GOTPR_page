@@ -119,13 +119,13 @@
     <div class="columns is-centered">
       <div class="column is-full">
         <div class="content">
-          <h2 class="title is-3">Concept of GOTLoc</h2>
+          <h2 class="title is-3">Concept</h2>
           <center>
             <img src="static/images/concept.jpg" class="center-image blend-img-background"/>
           </center>
           <div class="level-set has-text-justified">
             <p>
-              The user describes the surrounding environment in text and provides it to the delivery robot. The robot interprets the text description to determine the user's \textcolor{blue}{scene}. In this process, both the text description and the OSM data are converted into scene graphs. The robot then retrieves and identifies the most similar pair, estimating the current scene based on the highest similarity.
+              Concept of GOTLoc. The user describes the surrounding environment in text and provides it to the delivery robot. The robot interprets the text description to determine the user's \textcolor{blue}{scene}. In this process, both the text description and the OSM data are converted into scene graphs. The robot then retrieves and identifies the most similar pair, estimating the current scene based on the highest similarity.
             </p>
           </div>
         </div>
@@ -139,13 +139,33 @@
     <div class="columns is-centered">
       <div class="column is-full">
         <div class="content">
-          <h2 class="title is-3">Process of GOTLoc</h2>
+          <h2 class="title is-3">Related works</h2>
+          <center>
+            <img src="static/images/related_works.png" class="center-image blend-img-background" style="width:75%;"/>
+          </center>
+          <div class="level-set has-text-justified">
+            <!-- <p>
+              Comparison with the previous text-based coarse localization works
+            </p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
+          <h2 class="title is-3">Process</h2>
           <center>
             <img src="static/images/process.jpg" class="center-image blend-img-background"/>
           </center>
           <div class="level-set has-text-justified">
             <p>
-              The method consists of three sequential steps: 1) Scene graph generation, 2) Scene graph candidates extraction, 3) Scene graph retrieval and scene selection. The input data are a query text description and OSM. The output is the matching scene id.
+              Process of GOTLoc. The method consists of three sequential steps: 1) Scene graph generation, 2) Scene graph candidates extraction, 3) Scene graph retrieval and scene selection. The input data are a query text description and OSM. The output is the matching scene id.
             </p>
           </div>
         </div>
@@ -220,6 +240,38 @@
               <p>
                 Examples of the experimental data are provided. The data were generated based on GPS coordinates 48.964117, 8.472481. (a) and (b) are presented to facilitate comparison and understanding rather than actual data used in GOTLoc. In addition, The segmentations in (b) and (c) are included solely for visualization purposes to aid understanding. Moreover, the gray area in (f) represents the overlapping region with (e).
               </p>
+            </div>
+          </div>
+          <div class="content">
+            <h2 class="title is-4">Quantitative evaluation with baselines and ablation study</h2>
+            <center>
+              <img src="static/images/exp1_result.png" class="center-image blend-img-background"/>
+            </center>
+            <div class="level-set has-text-justified">
+            </div>
+          </div>
+
+          <div class="content">
+            <h2 class="title is-4">Quantitative evaluation for candidates extraction</h2>
+            <center>
+              <img src="static/images/exp2_result.png" class="center-image blend-img-background" style="width:50%;"/>
+            </center>
+            <div class="level-set has-text-justified">
+              <!-- <p>
+                Examples of the experimental data are provided. The data were generated based on GPS coordinates 48.964117, 8.472481. (a) and (b) are presented to facilitate comparison and understanding rather than actual data used in GOTLoc. In addition, The segmentations in (b) and (c) are included solely for visualization purposes to aid understanding. Moreover, the gray area in (f) represents the overlapping region with (e).
+              </p> -->
+            </div>
+          </div>
+
+          <div class="content">
+            <h2 class="title is-4">Quantitative evaluation for city-scale data</h2>
+            <center>
+              <img src="static/images/exp3_result.png" class="center-image blend-img-background" style="width:50%"/>
+            </center>
+            <div class="level-set has-text-justified">
+              <!-- <p>
+                Examples of the experimental data are provided. The data were generated based on GPS coordinates 48.964117, 8.472481. (a) and (b) are presented to facilitate comparison and understanding rather than actual data used in GOTLoc. In addition, The segmentations in (b) and (c) are included solely for visualization purposes to aid understanding. Moreover, the gray area in (f) represents the overlapping region with (e).
+              </p> -->
             </div>
           </div>
         </div>
