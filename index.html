@@ -186,11 +186,11 @@
           <center>
             <img src="static/images/related_works.png" class="center-image blend-img-background" style="width:75%;"/>
           </center>
-          <div class="level-set has-text-justified">
+          <!-- <div class="level-set has-text-justified"> -->
             <!-- <p>
               Comparison with the previous text-based coarse localization works
             </p> -->
-          </div>
+          <!-- </div> -->
         </div>
       </div>
     </div>
@@ -227,10 +227,10 @@
           <center>
             <img src="static/images/osm_map_scene_graph_generation_process.jpg" class="center-image blend-img-background"/>
           </center>
-          <div class="level-set has-text-justified">
+          <!-- <div class="level-set has-text-justified"> -->
             <!-- <p>
             </p> -->
-          </div>
+          <!-- </div> -->
         </div>
 
         <div class="content">
@@ -238,10 +238,10 @@
           <center>
             <img src="static/images/text_scene_graph_generation_process.jpg" class="center-image blend-img-background"/>
           </center>
-          <div class="level-set has-text-justified">
+          <!-- <div class="level-set has-text-justified"> -->
             <!-- <p>
             </p> -->
-          </div>
+          <!-- </div> -->
         </div>
       </div>
     </div>
@@ -312,11 +312,11 @@
             <center>
               <img src="static/images/exp2_result.png" class="center-image blend-img-background" style="width:50%;"/>
             </center>
-            <div class="level-set has-text-justified">
+            <!-- <div class="level-set has-text-justified"> -->
               <!-- <p>
                 Examples of the experimental data are provided. The data were generated based on GPS coordinates 48.964117, 8.472481. (a) and (b) are presented to facilitate comparison and understanding rather than actual data used in GOTLoc. In addition, The segmentations in (b) and (c) are included solely for visualization purposes to aid understanding. Moreover, the gray area in (f) represents the overlapping region with (e).
               </p> -->
-            </div>
+            <!-- </div> -->
           </div>
 
           <div class="content">
@@ -324,11 +324,11 @@
             <center>
               <img src="static/images/exp3_result.png" class="center-image blend-img-background" style="width:50%"/>
             </center>
-            <div class="level-set has-text-justified">
+            <!-- <div class="level-set has-text-justified"> -->
               <!-- <p>
                 Examples of the experimental data are provided. The data were generated based on GPS coordinates 48.964117, 8.472481. (a) and (b) are presented to facilitate comparison and understanding rather than actual data used in GOTLoc. In addition, The segmentations in (b) and (c) are included solely for visualization purposes to aid understanding. Moreover, the gray area in (f) represents the overlapping region with (e).
               </p> -->
-            </div>
+            <!-- </div> -->
           </div>
 
           <div class="content">
@@ -336,11 +336,11 @@
             <center>
               <img src="static/images/processing_time.png" class="center-image blend-img-background" style="width:50%"/>
             </center>
-            <div class="level-set has-text-justified">
+            <!-- <div class="level-set has-text-justified"> -->
               <!-- <p>
                 Examples of the experimental data are provided. The data were generated based on GPS coordinates 48.964117, 8.472481. (a) and (b) are presented to facilitate comparison and understanding rather than actual data used in GOTLoc. In addition, The segmentations in (b) and (c) are included solely for visualization purposes to aid understanding. Moreover, the gray area in (f) represents the overlapping region with (e).
               </p> -->
-            </div>
+            <!-- </div> -->
           </div>
 
           <div class="content">
@@ -348,11 +348,11 @@
             <center>
               <img src="static/images/map_data_size.png" class="center-image blend-img-background" style="width:50%"/>
             </center>
-            <div class="level-set has-text-justified">
+            <!-- <div class="level-set has-text-justified"> -->
               <!-- <p>
                 Examples of the experimental data are provided. The data were generated based on GPS coordinates 48.964117, 8.472481. (a) and (b) are presented to facilitate comparison and understanding rather than actual data used in GOTLoc. In addition, The segmentations in (b) and (c) are included solely for visualization purposes to aid understanding. Moreover, the gray area in (f) represents the overlapping region with (e).
               </p> -->
-            </div>
+            <!-- </div> -->
           </div>
 
           <!-- <div class="content">
@@ -378,20 +378,32 @@
   <div class="container is-max-desktop">
     <div class="row">
       <h2 class="title is-3">
-        Experiments involving LLM-rewritten user-generated text description
+        Experiments involving the user-generated text description
       </h2>
       <div class="content">
         <h2 class="title is-4">Images presented to the tester</h2>
         <center>
-          <img src="static/images/user_test_panoramic_streetview.jpg" class="center-image blend-img-background" style="width:66%"/>
-          <img src="static/images/user_test_osm.jpg" class="center-image blend-img-background" style="width:15%"/>
+          <img src="static/images/user_test_panoramic_streetview.jpg" class="center-image blend-img-background" style="width:100%"/>
         </center>
+        <div class="level-set has-text-justified">
+          <p>
+            Street-view image (360 degree)
+          </p>
+        </div>
+        <center>
+          <img src="static/images/user_test_osm.jpg" class="center-image blend-img-background" style="width:33%"/>
+        </center>
+        <div class="level-set has-text-justified">
+          <p>
+            OSM image (used for directional reference)
+          </p>
+        </div>
       </div>
       <p class="content has-text-justified">
           <a href="static/prompts/user_instruction.txt">User intruction</a> |
-          <a href="static/prompts/user_text_description.txt">Example of the user-generated text description</a> |
-          <a href="static/prompts/prompt.txt">Prompt for LLM's transforming user-generated text into the GOTLoc description format</a>
-          <a href="static/prompts/llm_text_description.txt">The LLM-generated text description</a>
+          <a href="static/prompts/user_text_description.txt">User-generated text description</a> |
+          <a href="static/prompts/prompt.txt">Prompt for LLM (user-generated text to GOTLoc format)</a> |
+          <a href="static/prompts/llm_text_description.txt">LLM-generated text description</a>
     </div>
   </div>
 </section>
