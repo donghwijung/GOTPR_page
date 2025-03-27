@@ -373,6 +373,99 @@
   </div>
 </section>
 
+<!-- Visualized localization results session -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="row">
+      <h2 class="title is-3">
+        Qualitative results
+      </h2>
+      <div class="content">
+        <!-- <h2 class="title is-4">Text description</h2> -->
+        <center>
+          <img src="static/images/text_description.jpg" class="center-image blend-img-background" style="width:50%"/>
+        </center>
+        <div class="level-set has-text-justified">
+          <p>
+            Query text description.
+          </p>
+        </div>
+        <center>
+          <img src="static/images/query_text_graph.png" class="center-image blend-img-background" style="width:50%"/>
+        </center>
+        <div class="level-set has-text-justified">
+          <p>
+            Query text scene graph.
+          </p>
+        </div>
+      </div>
+      <div class="content">
+        <!-- <h2 class="title is-4">Text description</h2> -->
+        <center>
+          <img src="static/images/top1_osm(gt).png" class="center-image blend-img-background" style="width:50%"/>
+        </center>
+        <div class="level-set has-text-justified">
+          <p>
+            Top-1 OSM (G.T.).
+          </p>
+        </div>
+        <center>
+          <img src="static/images/top1_osm_graph(gt).png" class="center-image blend-img-background" style="width:50%"/>
+        </center>
+        <div class="level-set has-text-justified">
+          <p>
+            Top-1 OSM scene graph (G.T.)
+          </p>
+        </div>
+      </div>
+      <div class="content">
+        <!-- <h2 class="title is-4">Text description</h2> -->
+        <center>
+          <img src="static/images/top5_osm.png" class="center-image blend-img-background" style="width:50%"/>
+        </center>
+        <div class="level-set has-text-justified">
+          <p>
+            Top-5 OSM.
+          </p>
+        </div>
+        <center>
+          <img src="static/images/top5_osm_graph.png" class="center-image blend-img-background" style="width:50%"/>
+        </center>
+        <div class="level-set has-text-justified">
+          <p>
+            Top-5 OSM scene graph.
+          </p>
+        </div>
+      </div>
+      <div class="content">
+        <!-- <h2 class="title is-4">Text description</h2> -->
+        <center>
+          <img src="static/images/top10_osm.png" class="center-image blend-img-background" style="width:50%"/>
+        </center>
+        <div class="level-set has-text-justified">
+          <p>
+            Top-10 OSM.
+          </p>
+        </div>
+        <center>
+          <img src="static/images/top10_osm_graph.png" class="center-image blend-img-background" style="width:50%"/>
+        </center>
+        <div class="level-set has-text-justified">
+          <p>
+            Top-10 OSM scene graph.
+          </p>
+        </div>
+      </div>
+      <div class="level-set has-text-justified">
+        <p>
+          An example of localization results from GOTLoc. The OSM scene graph that best matches the actual query text scene graph serves as the ground truth and corresponds to the Top-1 OSM scene graph with the highest similarity in the example above. The results were generated using the GPS coordinates 43.7594129828112,-79.46708294624517.
+          The suffixes <i>_n1,2</i> attached to some node labels in (a) are identifiers used to distinguish nodes with the same label. These identifiers are removed during the text scene graph generation process, resulting in the text scene graph shown in (b).
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- Prompt session -->
 <section class="section">
   <div class="container is-max-desktop">
@@ -387,7 +480,7 @@
         </center>
         <div class="level-set has-text-justified">
           <p>
-            Street-view image (360 degree)
+            Street-view image (360 degree).
           </p>
         </div>
         <center>
@@ -395,7 +488,7 @@
         </center>
         <div class="level-set has-text-justified">
           <p>
-            OSM image (used for directional reference)
+            OSM image (used for directional reference).
           </p>
         </div>
       </div>
@@ -404,6 +497,7 @@
           <a href="static/prompts/user_text_description.txt">User-generated text description</a> |
           <a href="static/prompts/prompt.txt">Prompt for LLM (user-generated text to GOTLoc format)</a> |
           <a href="static/prompts/llm_text_description.txt">LLM-generated text description</a>
+        </p>
     </div>
   </div>
 </section>
