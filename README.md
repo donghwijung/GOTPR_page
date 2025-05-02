@@ -1,1 +1,1 @@
-# donghwijung.github.io/GOTLoc_page/
+# donghwijung.github.io/GOTPR_page/
